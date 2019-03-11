@@ -58,7 +58,8 @@ RUN useradd -U -m superset && \
         sqlalchemy-clickhouse==0.1.5.post0 \
         sqlalchemy-redshift==0.7.1 \
     rm requirements.txt
-    pip install git+https://github.com/apache/incubator-superset
+    
+run pip install git+https://github.com/apache/incubator-superset
 
 # Configure Filesystem
 COPY superset /usr/local/bin
